@@ -37,10 +37,15 @@
 		<a href="#skip" class="visually-hidden">Skip to main content</a>
 
 		<header>
+
+		{# Broken image link, unable to get to work #}
+		<img src="/content/images/jpw-web-development-high-resolution-logo-black.png" />
 			<a href="/" class="home-link">{{ metadata.title }}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
+			{# Broken image link, unable to get to work #}
+			<img src="\content\images\jpw-web-development-high-resolution-logo-black.png">
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
 				{%- for entry in collections.all | eleventyNavigation %}

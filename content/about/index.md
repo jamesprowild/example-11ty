@@ -6,4 +6,4 @@ eleventyNavigation:
 ---
 # About Me
 
-I am a person that writes stuff.
+I am a driving instructor that is learning to code with The Coders Guild in the hopes of making a career change.
