@@ -48,13 +48,12 @@ body {
 	font-family: var(--font-family);
 	color: var(--text-color);
 	background-color: var(--background-color);
+	background-image: linear-gradient(to right, #FFFC4Cff, #0AA1F8ff);
 }
 html {
 	overflow-y: scroll;
 }
-body {
-	max-width: 40em;
-}
+
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
@@ -149,6 +148,7 @@ header {
 	flex-wrap: wrap;
 	align-items: center;
 	padding: 1em;
+	background-image: linear-gradient(to right, #FFFC4Cff, #0AA1F8ff);
 }
 .home-link {
 	font-size: 1em; /* 16px /16 */
