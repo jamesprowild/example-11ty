@@ -4,7 +4,7 @@
 	<div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %} card w-50 border-primary mb-3 ">
 		<div class="card-body">
 			<h5 class="card-title"><a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h5>
-			<p class="card-text"><time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time></p>
+			<p class="card-text"><time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.data.description }}{{ post.date | readableDate("LLLL yyyy") }}</time></p>
 		</div>
 	</div>
 {% endfor %}
