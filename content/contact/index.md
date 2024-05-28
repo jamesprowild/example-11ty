@@ -4,10 +4,5 @@ eleventyNavigation:
   key: Contact
   order: 4
 ---
-# Contact Details
-
-- Name
-- Phone
-- Email
-
+# Contact
 
