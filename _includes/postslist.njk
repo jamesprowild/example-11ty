@@ -1,16 +1,11 @@
 {%- css %}.postlist { counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }} }{% endcss %}
 <div reversed class="postlist">
-
 {% for post in postslist | reverse %}
-<div class="row row-cols-1 row-cols-md-2 g-4">
-<div class="col">
 	<div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %} card w-50 border-primary mb-3 ">
 		<div class="card-body">
 			<h5 class="card-title"><a href="{{ post.url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h5>
 			<p class="card-text"><time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate("LLLL yyyy") }}</time></p>
 		</div>
-	</div>
-	</div>
 	</div>
 {% endfor %}
 </div>
