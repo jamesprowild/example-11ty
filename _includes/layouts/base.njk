@@ -12,17 +12,6 @@
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 
-		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
-		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
-
-		{#-
-		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
-		1. You can add to them using `{% css %}`
-		2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
-		3. You can do the same for JS: {% js %}{% endjs %} and <script>{% getBundle "js" %}</script>
-		4. Learn more: https://github.com/11ty/eleventy-plugin-bundle
-		#}
-
 		{#- Add an arbitrary string to the bundle #}
 		{%- css %}* { box-sizing: border-box; }{% endcss %}
 		{#- Add the contents of a file to the bundle #}
@@ -40,14 +29,12 @@
 
 		<header>
 
-		{# Broken image link, unable to get to work #}
-		<img src="/content/images/jpw-web-development-high-resolution-logo-black.png" />
+		<img src="../../images/jpw-web-development-high-resolution-logo-black-transparent.png" width="20%" height="20%" />
 			<a href="/" class="home-link">{{ metadata.title }}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-			{# Broken image link, unable to get to work #}
-			<img src="\content\images\jpw-web-development-high-resolution-logo-black.png">
+			<nav class="navbar navbar-expand-lg navbar-light mx-auto">
+
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
 				{%- for entry in collections.all | eleventyNavigation %}
@@ -57,7 +44,7 @@
 			</nav>
 		</header>
 
-		<main id="skip">
+		<main class="container justify-content-center" id="skip">
 			{{ content | safe }}
 		</main>
 
